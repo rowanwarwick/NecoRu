@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lesson_18.Practice</string>
+    <string name="sigh_in">sign in</string>
+    <string name="sigh_up">register</string>
+    <string name="avatar">avatar</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="name">name</string>
+    <string name="second_name">second name</string>
+    <string name="third_name">third name</string>
+    <string name="gone">gone</string>
+    <string name="exit">exit</string>
+</resources>

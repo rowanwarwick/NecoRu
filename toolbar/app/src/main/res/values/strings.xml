@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">menu</string>
+    <string name="save">save</string>
+    <string name="search">search</string>
+    <string name="sync">sync</string>
+    <string name="delete">delete</string>
+    <string name="icon1">icon 1</string>
+    <string name="icon2">icon 2</string>
+    <string name="icon3">icon 3</string>
+    <string name="icon4">icon 4</string>
+    <string name="open">open navigation view</string>
+    <string name="category_1">category 1</string>
+    <string name="item_1">item 1</string>
+    <string name="item_2">item 2</string>
+    <string name="item_3">item 3</string>
+    <string name="item_4">item 4</string>
+    <string name="category_2">category 2</string>
+    <string name="item_11">item 11</string>
+    <string name="item_21">item 21</string>
+    <string name="item_31">item 31</string>
+    <string name="item_41">item 41</string>
+    <string name="example">example header</string>
+    <string name="todo">TODO</string>
+</resources>

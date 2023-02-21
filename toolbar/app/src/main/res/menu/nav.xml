@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/icon1"
+        android:id="@+id/icon1"
+        android:icon="@drawable/icon1"
+        android:orderInCategory="1"
+        />
+    <item
+        android:title="@string/icon2"
+        android:id="@+id/icon2"
+        android:icon="@drawable/icon2"
+        android:orderInCategory="2"
+        />
+    <item
+        android:title="@string/icon3"
+        android:id="@+id/icon3"
+        android:icon="@drawable/icon3"
+        android:orderInCategory="3"
+        />
+    <item
+        android:title="@string/icon4"
+        android:id="@+id/icon4"
+        android:icon="@drawable/icon4"
+        android:orderInCategory="4"
+        />
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/save"
+        android:id="@+id/save"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/save"
+        android:orderInCategory="3"
+        />
+    <item
+        android:title="@string/search"
+        android:id="@+id/search"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/search"
+        android:orderInCategory="2"
+        />
+    <item
+        android:title="@string/sync"
+        android:id="@+id/sync"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/sync"
+        android:orderInCategory="1"
+        />
+    <item
+        android:title="@string/delete"
+        android:id="@+id/delete"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/delete"
+        android:orderInCategory="4"
+        />
+</menu>

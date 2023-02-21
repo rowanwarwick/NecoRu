@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">recycleCar</string>
+    <string name="nothing">nothing</string>
+    <string name="add">ADD</string>
+    <string name="next">next</string>
+    <string name="previous">previous</string>
+    <string name="title">title</string>
+    <string name="description">description</string>
+</resources>

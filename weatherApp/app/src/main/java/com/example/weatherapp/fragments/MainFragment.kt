@@ -75,12 +75,9 @@ class MainFragment : Fragment() {
         checkPermission()
         updateCurrentDay()
         init()
-    }
-
-    override fun onResume() {
-        super.onResume()
         checkLocation()
     }
+
 
     fun init() {
         locationClient = LocationServices.getFusedLocationProviderClient(requireContext())
@@ -129,8 +126,6 @@ class MainFragment : Fragment() {
             ) != PackageManager.PERMISSION_GRANTED
         ) {
             return
-//            permissionListener()
-//            permissionLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION)
         }
         locationClient.getCurrentLocation(Priority.PRIORITY_HIGH_ACCURACY, token.token)
             .addOnCompleteListener {
@@ -147,8 +142,8 @@ class MainFragment : Fragment() {
 
     fun permissionListener() {
         permissionLauncher =
-            registerForActivityResult(ActivityResultContracts.RequestPermission()) {
-
+            registerForActivityResult(ActivityResultContracts.RequestPermission()){
+                checkLocation()
             }
     }
 

@@ -13,24 +13,20 @@ import com.squareup.picasso.Picasso
 
 class WeatherAdapter(val listener: Listener?): ListAdapter<DayItem, WeatherAdapter.OurHolder>(Comparator()) {
 
-    class OurHolder(view: View, listener: Listener?):ViewHolder(view) {
+    class OurHolder(view: View, val listener: Listener?):ViewHolder(view) {
 
         val binding = ItemRecyclerBinding.bind(view)
-        var tempItem: DayItem? = null
 
-        init {
-            view.setOnClickListener {
-                tempItem?.let { it1 -> listener?.onClick(it1) }
-            }
-        }
         fun bind(day: DayItem) {
-            tempItem = day
             binding.apply {
                 itemDate.text = day.time
                 itemCondition.text = day.conditionWeather
                 val temp = if (day.currectTemp.isNotEmpty() && day.currectTemp.first() != 'a') day.currectTemp + "°C" else "${day.minTemp}°C/${day.maxTemp}°C"
                 itemTemp.text = temp
                 Picasso.get().load("https:" + day.imageURLWeather).into(itemImage)
+            }
+            itemView.setOnClickListener {
+                listener?.onClick(day)
             }
         }
     }

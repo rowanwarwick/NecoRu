@@ -36,7 +36,7 @@ class DaysFragment : Fragment(), WeatherAdapter.Listener {
 
     fun initRecycleView() {
         binding.apply {
-            list.layoutManager = LinearLayoutManager(this@DaysFragment.context)
+            list.layoutManager = LinearLayoutManager(requireContext())
             adapter = WeatherAdapter(this@DaysFragment)
             list.adapter = adapter
         }
